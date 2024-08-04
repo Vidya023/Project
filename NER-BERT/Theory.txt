@@ -1,0 +1,23 @@
+NER = Name Entity Recognization
+
+Trying to extract meaningful information from text entered 
+
+eg : Resume Parser 
+
+Extract meaningful infomration and keywords, then compare it with job description (similarity measurement) 
+* using metric cosine similarity metric to measure similarity percentage.
+* if metric is more than 70%, the resume will be approved 
+
+How it is extracting information ?
+
+Bill Gates is the founder of Microsoft
+
+Bill - B-person = Beginning-person            Gates - I person = Inside-person     
+is, the - object                              founder - designation   
+of - object                                   Microsoft - Organisation 
+
+NER belongs to category Token classification. Each word in a sentence is a token. 
+
+
+
+

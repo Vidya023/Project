@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload and Predict</title>
+</head>
+<body>
+    <h1>Upload and Predict</h1>
+    
+    <!-- Upload Form -->
+    <h2>Upload Image</h2>
+    <form action="/upload/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">Upload</button>
+    </form>
+
+    <!-- Uploaded Image -->
+    <h2>Uploaded Image</h2>
+    <img id="uploaded_image" src="" alt="Uploaded Image">
+
+    <!-- Predict Form -->
+    <h2>Predict</h2>
+    <form id="predictForm" action="/predict/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button id="predictButton" type="submit">Predict</button> 
+    </form>
+
+    <!-- Display Predicted Result -->
+    <div class="text-center text-black">
+        <h2 class="display-4 fw-bolder">Patient Status: {{status}}</h2> 
+    </div>
+    <script>
+        const uploadButton = document.querySelector('button[type="submit"]');
+        const fileInput = document.querySelector('input[type="file"]');
+        const uploadedImage = document.getElementById('uploaded_image');
+
+        uploadButton.addEventListener('click', async (event) => {
+            event.preventDefault();
+
+            const formData = new FormData();
+            formData.append('file', fileInput.files[0]);
+
+            const response = await fetch('/upload/', {
+                method: 'POST',
+                body: formData
+            });
+
+            const data = await response.json();
+
+            uploadedImage.src = `/static/${data.filename}`;
+        });
+    </script>
+</body>
+</html>

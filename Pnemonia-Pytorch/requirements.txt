@@ -1,0 +1,19 @@
+ipykernel
+fastapi
+joblib==1.2.0
+uvicorn
+torchvision
+tqdm==4.64.1
+wincertstore==0.2
+pip-chill==1.0.1
+opencv-python==4.7.0.68
+matplotlib==3.6.2
+torch-summary==1.4.5
+numpy
+python-multipart
+pandas
+from-root
+pillow
+gdown
+
+-e .
