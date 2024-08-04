@@ -15,8 +15,8 @@ balance and net quantity.
 
 1. Image that shows how signals are generated based on given strategy
 
-![signals](images\signals.png) 
+![signals](images/signals.png) 
 
 2. Dataframe discussing the action, available quantity of asset, balance and profit
 
-![data](images\dataframe.png)
+![data](images/dataframe.png)

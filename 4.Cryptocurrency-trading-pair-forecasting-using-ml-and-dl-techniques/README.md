@@ -12,28 +12,28 @@ correlation (0.81) to Bitcoin.
 
 1. 
 
-![performance](images\performance.png) 
+![performance](images/performance.png) 
 
 2. Cumulative Returns 
 
-![cumuret](images\cumulative.png) 
+![cumuret](images/cumulative.png) 
 
 3. Heatmap showing correlation between BITCOIN and other cryptocurrencies
 
-![heatmap](images\heatmap.png) 
+![heatmap](images/heatmap.png) 
 
 4. Comparing performance of BTC and scaled ETH
 
-![scaled](images\scaled.png) 
+![scaled](images/scaled.png) 
 
 5. Comparing cumulative returns of BTC and ETH
 
-![btceth](images\btceth.png)
+![btceth](images/btceth.png)
 
 6. Comparing all the 4 models on test price of BITCOIN
 
-![models](images\models.png)
+![models](images/models.png)
 
 7. Model accuracy for predictin BITCOIN prices
 
-![accuracy](images\accuracy.png)
+![accuracy](images/accuracy.png)
