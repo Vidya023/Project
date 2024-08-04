@@ -1,4 +1,4 @@
-# ## Cryptocurrency trading-pair forecasting, using machine learning and deep learning Technique 
+# Cryptocurrency trading-pair forecasting, using machine learning and deep learning Technique 
 
 ### Summary
 
