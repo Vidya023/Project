@@ -1,0 +1,9 @@
+ipykernel
+moviepy
+openai-whisper 
+transformers 
+pytube 
+flask 
+setuptools 
+
+-e .
